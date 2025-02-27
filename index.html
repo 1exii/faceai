@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Face Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1/dist/face-api.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="video" autoplay width="640" height="480"></video>
+            <canvas id="overlay" width="640" height="480"></canvas>
+        </div>
+        <div class="status-container">
+            <div id="status">Loading...</div>
+        </div>
+        <div class="controls">
+            <button id="startBtn">Start Webcam</button>
+            <button id="stopBtn" disabled>Stop Webcam</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
